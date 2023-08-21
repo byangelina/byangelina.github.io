@@ -1,0 +1,768 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100&display=swap');
+
+/*Colores */
+:root {
+    --primer-color: #8d5cff;
+    --segundo-color: #ff4ec4;
+    --tercer-color: #80dd4a;
+    --boton-color: #9f9fff;
+    --subtitulos: #2f2f2f;
+    --background-seccion: #e2dce5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+/*!--------HEADER-------- */
+header nav{
+    background-color: rgb(195, 130, 255);
+}
+
+.hero h1{
+    padding: 2rem;
+}
+
+
+/* Estilos para el video en el encabezado */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Estilos para las redes sociales en el video */
+.redes-sociales {
+    position: absolute;
+    bottom: 3rem;
+    /* Ajustar la distancia desde abajo */
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    color: white;
+}
+
+.redes-sociales p {
+    margin-bottom: 0.5rem;
+}
+
+.redes-icons {
+    display: flex;
+    align-items: center;
+}
+
+.redes-icons a {
+    margin: 10px;
+}
+
+.redes-icons img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.redes-icons img:hover {
+    opacity: 1;
+}
+
+/* Estilos para el texto que se superpondrá sobre el video */
+.container-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+}
+
+.content-video p {
+    color: rgb(184, 174, 182);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.534);
+}
+
+/* Estilos para el fondo semitransparente */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Ajusta la opacidad aquí */
+    z-index: 0;
+}
+
+main p{
+    font-size: 0.9rem;
+}
+
+
+.navbar{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.nav-link{
+    color: white;
+    margin: 1rem;
+    font-weight: 400;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.boton-nav{
+    background-color: rgb(139, 105, 251);
+    color: white;
+}
+
+.boton-nav{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.boton-nav:hover{
+    background-color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Estilos para el menú de hamburguesa */
+.navbar-toggler-icon {
+    background-color: rgb(148, 68, 188);
+    width: 30px;
+    height: 3px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Cambios al interactuar con el menú de hamburguesa */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: transparent;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(-90deg);
+    top: 0;
+    position: absolute;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    top: 0;
+}
+
+
+
+/* Estilos para los elementos de la lista desplegable */
+.navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+    background-color: rgb(136, 80, 255);
+    /* Cambia el color de fondo aquí */
+}
+
+/* Estilos para los enlaces en la lista desplegable */
+.navbar .navbar-nav .nav-item.dropdown .dropdown-menu a {
+    color: white;
+    /* Color de texto blanco */
+    transition: color 0.3s ease;
+}
+
+/* Estilos para los enlaces en la lista desplegable al pasar el cursor */
+.navbar .navbar-nav .nav-item.dropdown .dropdown-menu a:hover {
+    color: black;
+    /* Cambia el color de texto al pasar el cursor */
+}
+
+
+.creativity-text{
+    text-align: center;
+    padding: 1rem;
+    color: gray;
+}
+
+/*SECCIONES*/
+section {
+    margin: 0;
+    padding: 5rem;
+    height: auto;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primer-color);
+}
+
+section h3 {
+    color: var(--subtitulos);
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+
+/*BOTONES*/
+button {
+    background-color: var(--primer-color);
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 0;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
+/*SECCIÓN SOBRE MÍ*/
+.sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7rem;
+}
+
+.parrafo-sobremi p {
+    text-align: justify;
+    padding: 6rem;
+    margin: 0;
+}
+
+.boton button img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.boton {
+    margin: 2rem;
+}
+
+
+/*SECCIÓN MIS CONOCIMIENTOS*/
+.mis-conocimientos {
+    background-color: rgb(139, 105, 251);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 7rem;
+}
+
+.mis-conocimientos h1 {
+    color: white;
+}
+
+.parrafo-conocimientos p {
+    text-align: justify;
+    padding: 6rem;
+    margin: 0;
+}
+
+/* skills de conocimientos */
+.skills:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu-skills{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.menu-skills div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+    transition: width 2s ease;
+}
+
+/* Animación de skills conocimientos */
+#html-menu {
+    animation: html-barra 2s forwards;
+}
+
+@keyframes html-barra {
+    100% {
+        width: 80%;
+    }
+}
+
+#css-menu {
+    animation: css-barra 2s forwards;
+}
+
+@keyframes css-barra {
+    100% {
+        width: 70%;
+    }
+}
+
+#javascript-menu {
+    animation: javascript-barra 2s forwards;
+}
+
+@keyframes javascript-barra {
+    100% {
+        width: 75%;
+
+    }
+}
+
+#photoshop-menu {
+    animation: photoshop-barra 2s forwards;
+}
+
+@keyframes photoshop-barra {
+    100% {
+        width: 85%;
+    }
+}
+
+#illustrator-menu {
+    animation: illustrator-barra 2s forwards;
+}
+
+@keyframes illustrator-barra {
+    100% {
+        width: 70%;
+    }
+}
+
+#after-effects-menu {
+    animation: after-effects-barra 2s forwards;
+}
+
+@keyframes after-effects-barra {
+    100% {
+        width: 80%;
+    }
+}
+
+
+/*GALERÍA DE DESARROLLO WEB*/
+.galeria-desarrollo-web {
+    padding: 7rem 0;
+    text-align: center;
+    background-color: var(--background-seccion);
+    height: auto;
+}
+
+
+/* GALERÍA DE ANUNCIOS */
+/* Estilos para el carrusel de la galería */
+.galeria-anuncios {
+    padding: 7rem 0;
+    text-align: center;
+    background-color:white;
+    height: auto;
+}
+
+/* Estilos para el difuminado en la galería */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.628));
+    padding: 10px;
+    color: white;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el sombreado en los textos de la galería */
+.carousel-caption h5,
+.carousel-caption p {
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Estilos para el formulario de contacto */
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: var(--background-seccion);
+    height: auto;
+}
+
+.form-derecha {
+    /* Ancho máximo deseado */
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-derecha h1,
+.form-derecha h3 {
+    margin-bottom: 1.5rem;
+}
+
+.form-derecha h3 {
+    font-size: 1.5rem;
+}
+
+.form-derecha form {
+    width: 100%;
+}
+
+.form-derecha p {
+    margin: 1rem 0;
+}
+
+.form-derecha input[type="text"],
+.form-derecha textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-derecha input[type="submit"] {
+    background-color: var(--primer-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-derecha input[type="submit"]:hover {
+    background-color: var(--segundo-color);
+}
+
+
+/* Estilos para el pie de página */
+footer h4 {
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #8d5cff;
+}
+
+.footer-col {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para las imágenes de las redes sociales en el footer */
+.footer-icon {
+    width: 20px;
+    /* Ajusta el tamaño según tus preferencias */
+    height: 20px;
+}
+
+
+
+
+
+
+/*------------------------- RESPONSIVE -----------------------------------*/
+
+/* Estilos para pantallas más pequeñas (celular pequeño) */
+@media (max-width: 320px) {
+    body {
+        font-size: 15px;
+    }
+
+    .navbar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .redes-sociales {
+        margin-top: 1rem;
+    }
+
+    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+        background-color: rgb(136, 80, 255);
+    }
+
+    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu a {
+        color: white;
+    }
+
+    .redes-sociales {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .redes-icons {
+        justify-content: center;
+    }
+
+    .sobremi,
+    .mis-conocimientos {
+        padding: 2.5rem;
+    }
+
+    .parrafo-sobremi p,
+    .parrafo-conocimientos p {
+        padding: 1rem;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .galeria-desarrollo-web,
+    .galeria-anuncios,
+    .formulario {
+        padding: 2rem 0;
+    }
+
+    /* Ajustes para las secciones */
+    section {
+        padding: 3rem;
+        height: auto;
+    }
+}
+
+
+
+/* Estilos para pantallas medianas (celular mediano) */
+@media (min-width: 321px) and (max-width: 375px) {
+    body {
+        font-size: 15px;
+    }
+
+    .navbar {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .boton {
+        margin: 1rem;
+    }
+
+    .redes-sociales {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .redes-icons {
+        justify-content: center;
+    }
+
+    .sobremi,
+    .mis-conocimientos {
+        padding: 2.5rem;
+    }
+
+    .parrafo-sobremi p,
+    .parrafo-conocimientos p {
+        padding: 1.5rem;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .galeria-desarrollo-web,
+    .galeria-anuncios,
+    .formulario {
+        padding: 2.5rem 0;
+    }
+}
+
+
+
+/* Estilos para pantallas grandes (celular grande) */
+@media (min-width: 376px) and (max-width: 720px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .boton {
+        margin: 1.5rem;
+    }
+
+    .sobremi,
+    .mis-conocimientos {
+        padding: 3rem;
+    }
+
+    .parrafo-sobremi p,
+    .parrafo-conocimientos p {
+        padding: 2rem;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .galeria-desarrollo-web,
+    .galeria-anuncios,
+    .formulario {
+        padding: 3rem 0;
+    }
+}
+
+
+
+
+
+----------------------/* Estilos para tablets */-------------------------
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+        /* Ajustar el tamaño de fuente para tablets */
+    }
+
+    .navbar {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero h1 {
+        padding: 4rem;
+    }
+
+    .sobremi,
+    .mis-conocimientos {
+        padding: 5rem;
+    }
+
+    .parrafo-sobremi p,
+    .parrafo-conocimientos p {
+        padding: 5rem;
+    }
+
+    .galeria-desarrollo-web,
+    .galeria-anuncios,
+    .formulario {
+        padding: 5rem 0;
+    }
+}
+
+
+---------------/* Estilos para pantallas más grandes (escritorio) */----------
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 17px;
+        /* Ajustar el tamaño de fuente para pantallas de escritorio */
+    }
+
+    .navbar {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .hero h1 {
+        padding: 6rem;
+    }
+
+    .sobremi,
+    .mis-conocimientos {
+        padding: 6rem;
+    }
+
+    .parrafo-sobremi p,
+    .parrafo-conocimientos p {
+        padding: 6rem;
+    }
+
+    .galeria-desarrollo-web,
+    .galeria-anuncios,
+    .formulario {
+        padding: 6rem 0;
+    }
+
+    footer {
+        padding: 5rem;
+    }
+
+    .footer-col {
+        margin-bottom: 2rem;
+    }
+}
