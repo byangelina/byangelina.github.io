@@ -23,12 +23,12 @@ a {
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 /*!--------HEADER-------- */
 header nav{
-    background-color: rgb(195, 130, 255);
+    background-color:rgb(127, 96, 227);
 }
 
 .hero h1{
@@ -86,7 +86,7 @@ header nav{
 .redes-icons img {
     width: 40px;
     height: 40px;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
@@ -132,10 +132,28 @@ main p{
     padding-right: 4rem;
 }
 
+.navbar-nav{
+    background-color:#9d76ff;
+    border-radius: 0.5rem;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    background-color: #d08dff;
+    border: 1px solid white;
+    border-radius: 100%;
+    transition: box-shadow .15s ease-in-out;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 .nav-link{
     color: white;
-    margin: 1rem;
-    font-weight: 400;
+    margin: 0.4rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .nav-link:hover{
@@ -145,9 +163,6 @@ main p{
 .boton-nav{
     background-color: rgb(139, 105, 251);
     color: white;
-}
-
-.boton-nav{
     border: 2px solid rgb(255, 255, 255);
 }
 
@@ -164,7 +179,7 @@ main p{
 
 /* Estilos para el menú de hamburguesa */
 .navbar-toggler-icon {
-    background-color: rgb(148, 68, 188);
+    background-color: rgb(255, 255, 255);
     width: 30px;
     height: 3px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -195,7 +210,7 @@ main p{
 
 /* Estilos para los elementos de la lista desplegable */
 .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
-    background-color: rgb(136, 80, 255);
+    background-color: rgb(255, 172, 231);
     /* Cambia el color de fondo aquí */
 }
 
@@ -204,6 +219,8 @@ main p{
     color: white;
     /* Color de texto blanco */
     transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 /* Estilos para los enlaces en la lista desplegable al pasar el cursor */
@@ -228,20 +245,22 @@ section {
 
 section h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: var(--primer-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 section h3 {
     color: var(--subtitulos);
     font-weight: 300;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 
 /*BOTONES*/
 button {
-    background-color: var(--primer-color);
+    background-color: rgb(144, 117, 232);
     border-radius: 2rem;
     padding: 1rem;
     border: 0;
@@ -264,10 +283,20 @@ button a {
     padding: 7rem;
 }
 
+.contenedor-sobremi{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .parrafo-sobremi p {
     text-align: justify;
     padding: 6rem;
     margin: 0;
+    color: black;
+    font-size: 1.5rem;
 }
 
 .boton button img {
@@ -281,29 +310,58 @@ button a {
 
 
 /*SECCIÓN MIS CONOCIMIENTOS*/
+
 .mis-conocimientos {
-    background-color: rgb(139, 105, 251);
+    background-color: rgb(141, 115, 228);
     color: white;
     display: flex;
-    flex-direction: column;
+    /* Agregamos display: flex */
     justify-content: center;
-    text-align: center;
-    padding: 7rem;
+    align-items: center;
+    padding: 3rem;
+    height: auto;
 }
 
-.mis-conocimientos h1 {
+.contenedor-conocimientos {
+    flex: 1;
+    padding:5rem;
+    /* Ocupa la mitad del espacio disponible */
+}
+
+.grafico-conocimientos {
+    flex: 0.5;
+    /* Ocupa la otra mitad del espacio disponible */
+    padding: 2rem 5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.encabezado-conocimientos h1 {
     color: white;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.porcentaje {
+    color: #663dae;
 }
 
 .parrafo-conocimientos p {
     text-align: justify;
-    padding: 6rem;
     margin: 0;
+    font-size: 1.5rem;
 }
 
 /* skills de conocimientos */
+
+.icono-grafico{
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
 .skills:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 3.3rem;
 }
 
 .detalles{
@@ -311,11 +369,13 @@ button a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
 }
 
 .menu-skills{
     position: relative;
-    border: 1px solid white;
+    border: 1px solid rgba(225, 210, 252, 0.601);
     border-radius: 20px;
 }
 
@@ -324,8 +384,8 @@ button a {
     width: 0;
     height: 8px;
     border-radius: 10px;
-    background-color: white;
-    transition: width 2s ease;
+    background-color: rgb(252, 143, 225);
+    transition: width 15s ease;
 }
 
 /* Animación de skills conocimientos */
@@ -393,9 +453,9 @@ button a {
 
 /*GALERÍA DE DESARROLLO WEB*/
 .galeria-desarrollo-web {
-    padding: 7rem 0;
+    padding: 5rem 0;
     text-align: center;
-    background-color: var(--background-seccion);
+    background-color: rgb(255, 255, 255);
     height: auto;
 }
 
@@ -403,9 +463,9 @@ button a {
 /* GALERÍA DE ANUNCIOS */
 /* Estilos para el carrusel de la galería */
 .galeria-anuncios {
-    padding: 7rem 0;
+    padding: 5rem 0;
     text-align: center;
-    background-color:white;
+    background-color: #f6f6f6;
     height: auto;
 }
 
@@ -416,9 +476,7 @@ button a {
     left: 0;
     width: 100%;
     height: 12rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.628));
     padding: 10px;
-    color: white;
 }
 
 .carousel-caption h5,
@@ -442,7 +500,7 @@ button a {
     justify-content: center;
     align-items: center;
     padding: 5rem 0;
-    background-color: var(--background-seccion);
+    background-color:rgb(255, 155, 220);
     height: auto;
 }
 
@@ -463,7 +521,7 @@ button a {
 }
 
 .form-derecha h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .form-derecha form {
@@ -471,7 +529,9 @@ button a {
 }
 
 .form-derecha p {
-    margin: 1rem 0;
+    margin: 1.2rem 0;
+    color: black;
+    font-size: 1.3rem;
 }
 
 .form-derecha input[type="text"],
@@ -483,8 +543,8 @@ button a {
 }
 
 .form-derecha input[type="submit"] {
-    background-color: var(--primer-color);
-    color: white;
+    background-color: rgb(141, 115, 228);
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
@@ -500,16 +560,23 @@ button a {
 /* Estilos para el pie de página */
 footer h4 {
     margin-bottom: 1rem;
+    font-weight: 600;
+    color: #fcb3eb;
+}
+
+footer a, p{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li img{
+    margin: 10px;
 }
 
 footer ul li {
     margin-bottom: 0.5rem;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
@@ -534,74 +601,12 @@ footer ul li a:hover {
 
 /*------------------------- RESPONSIVE -----------------------------------*/
 
-/* Estilos para pantallas más pequeñas (celular pequeño) */
-@media (max-width: 320px) {
-    body {
-        font-size: 15px;
-    }
 
-    .navbar {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .redes-sociales {
-        margin-top: 1rem;
-    }
-
-    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
-        background-color: rgb(136, 80, 255);
-    }
-
-    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu a {
-        color: white;
-    }
-
-    .redes-sociales {
-        position: absolute;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        z-index: 1;
-    }
-
-    .redes-icons {
-        justify-content: center;
-    }
-
-    .sobremi,
-    .mis-conocimientos {
-        padding: 2.5rem;
-    }
-
-    .parrafo-sobremi p,
-    .parrafo-conocimientos p {
-        padding: 1rem;
-        margin: 0;
-        overflow: hidden;
-    }
-
-    .galeria-desarrollo-web,
-    .galeria-anuncios,
-    .formulario {
-        padding: 2rem 0;
-    }
-
-    /* Ajustes para las secciones */
-    section {
-        padding: 3rem;
-        height: auto;
-    }
-}
 
 
 
 /* Estilos para pantallas medianas (celular mediano) */
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 375px) {
     body {
         font-size: 15px;
     }
@@ -631,31 +636,89 @@ footer ul li a:hover {
         justify-content: center;
     }
 
-    .sobremi,
-    .mis-conocimientos {
-        padding: 2.5rem;
+    .encabezado-conocimientos h1{
+        text-align: center;
+        margin-bottom: 3rem;
     }
 
-    .parrafo-sobremi p,
+    .encabezado-sobremi h1{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .contenedor-conocimientos {
+            padding: 4rem 1rem 1rem 1rem;
+        }
+
+    .contenedor-sobremi {
+            padding: 4rem 0.5rem 1rem 0.5rem;
+        }
+
     .parrafo-conocimientos p {
-        padding: 1.5rem;
         margin: 0;
         overflow: hidden;
+        font-size: 1rem;
     }
 
-    .galeria-desarrollo-web,
-    .galeria-anuncios,
-    .formulario {
-        padding: 2.5rem 0;
+    .parrafo-sobremi p{
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+        padding: 0 0 2rem 0;
     }
+
+    .mis-conocimientos {
+        background-color: rgb(141, 115, 228);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mi-sobremi {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .grafico-conocimientos{
+        width: 95%;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+    .detalles img, span{
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .skills:not(:last-child){
+        margin-bottom: 2.9rem;
+    }
+
+    .form-derecha{
+        padding: 2.9rem;
+    }
+
+    .form-derecha h3{
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
 }
 
 
 
 /* Estilos para pantallas grandes (celular grande) */
-@media (min-width: 376px) and (max-width: 720px) {
+@media (min-width: 376px) and (max-width: 1000px) {
     body {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .navbar {
@@ -667,22 +730,81 @@ footer ul li a:hover {
         margin: 1.5rem;
     }
 
-    .sobremi,
+    .encabezado-conocimientos h1{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .encabezado-sobremi h1{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .contenedor-conocimientos {
+            padding: 4rem 1rem 1rem 1rem;
+        }
+
+    .contenedor-sobremi {
+            padding: 4rem 0.5rem 1rem 0.5rem;
+        }
+
+    .parrafo-conocimientos p {
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .parrafo-sobremi p{
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+        padding: 0 0 2rem 0;
+    }
+
     .mis-conocimientos {
+        background-color: rgb(141, 115, 228);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mi-sobremi {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
         padding: 3rem;
     }
 
-    .parrafo-sobremi p,
-    .parrafo-conocimientos p {
-        padding: 2rem;
-        margin: 0;
-        overflow: hidden;
+    
+    .grafico-conocimientos{
+        width: 95%;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
     }
 
     .galeria-desarrollo-web,
     .galeria-anuncios,
     .formulario {
         padding: 3rem 0;
+    }
+
+    footer a, p{
+        font-size: 1rem;
+    }
+
+    footer h4{
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffcbee;
+    }
+
+    .div-row{
+        margin: 0;
     }
 }
 
@@ -692,45 +814,14 @@ footer ul li a:hover {
 
 ----------------------/* Estilos para tablets */-------------------------
 
-@media (min-width: 768px) and (max-width: 1199px) {
-    body {
-        font-size: 16px;
-        /* Ajustar el tamaño de fuente para tablets */
-    }
-
-    .navbar {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-
-    .hero h1 {
-        padding: 4rem;
-    }
-
-    .sobremi,
-    .mis-conocimientos {
-        padding: 5rem;
-    }
-
-    .parrafo-sobremi p,
-    .parrafo-conocimientos p {
-        padding: 5rem;
-    }
-
-    .galeria-desarrollo-web,
-    .galeria-anuncios,
-    .formulario {
-        padding: 5rem 0;
-    }
-}
 
 
 ---------------/* Estilos para pantallas más grandes (escritorio) */----------
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     body {
         font-size: 17px;
-        /* Ajustar el tamaño de fuente para pantallas de escritorio */
+        /* Ajustar el tamaño de fuente para pantallas de escritorio 
     }
 
     .navbar {
@@ -752,6 +843,7 @@ footer ul li a:hover {
         padding: 6rem;
     }
 
+
     .galeria-desarrollo-web,
     .galeria-anuncios,
     .formulario {
@@ -762,7 +854,17 @@ footer ul li a:hover {
         padding: 5rem;
     }
 
+    footer a, p{
+        font-size: 1rem;
+    }
+
+    footer h4{
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffcbee;
+    }
+
     .footer-col {
         margin-bottom: 2rem;
     }
-}
+}*/
