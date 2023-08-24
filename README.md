@@ -4,7 +4,7 @@
 - 📫 Puedes encontrarme en mis redes sociales adjuntas en este sitio **xangie.urrutiax@gmail.com**
 - 👩‍💻 Actualmente mi trabajo en desarrollo web es independiente y tengo una agencia de marketing digital.
 - 🌱 Estoy siempre aprendiendo algo nuevo.
-- 🕹️ Me gusta programar, jugar videojuegos, crear ilustracione, tomar café por la mañana y mate por las tardes.
+- 🕹️ Me gusta la programación, los videojuegos, crear ilustraciones, café por la mañana - mate por las tardes y contemplar la vida.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
