@@ -1,7 +1,10 @@
 <h1 align="center">Hi 👋, I'm Angela</h1>
 <h3 align="center">Una apasionada desarrolladora web y publicista profesional en Chile.</h3>
 
-- 📫Puedes encontrarme en mis redes sociales adjuntas en este sitio **xangie.urrutiax@gmail.com**
+- 📫 Puedes encontrarme en mis redes sociales adjuntas en este sitio **xangie.urrutiax@gmail.com**
+- 👩‍💻 Actualmente mi trabajo en desarrollo web es independiente y tengo una agencia de marketing digital.
+- 🌱 Estoy siempre aprendiendo algo nuevo.
+- 🕹️ Me gusta programar, jugar videojuegos, crear ilustracione, tomar café por la mañana y mate por las tardes.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
