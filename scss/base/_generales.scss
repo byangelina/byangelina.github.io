@@ -1,0 +1,27 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100&display=swap');
+
+/*Colores */
+:root {
+    --primer-color: #8d5cff;
+    --segundo-color: #ff4ec4;
+    --tercer-color: #80dd4a;
+    --boton-color: #9f9fff;
+    --subtitulos: #2f2f2f;
+    --background-seccion: #e2dce5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.3rem;
+}

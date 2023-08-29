@@ -1,0 +1,210 @@
+/*------------------------- RESPONSIVE -----------------------------------*/
+
+
+
+
+
+/* Estilos para pantallas medianas (celular mediano) */
+@media (min-width: 320px) and (max-width: 375px) {
+    body {
+        font-size: 15px;
+    }
+
+    .navbar {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .boton {
+        margin: 1rem;
+    }
+
+    .redes-sociales {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .redes-icons {
+        justify-content: center;
+    }
+
+    .encabezado-conocimientos h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .encabezado-sobremi h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .contenedor-conocimientos {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .contenedor-sobremi {
+        padding: 4rem 0.5rem 1rem 0.5rem;
+    }
+
+    .parrafo-conocimientos p {
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .parrafo-sobremi p {
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .mis-conocimientos {
+        background-color: rgb(141, 115, 228);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mi-sobremi {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .grafico-conocimientos {
+        width: 95%;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+    .detalles img,
+    span {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .skills:not(:last-child) {
+        margin-bottom: 2.9rem;
+    }
+
+    .form-derecha {
+        padding: 2.9rem;
+    }
+
+    .form-derecha h3 {
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+}
+
+
+
+/* Estilos para pantallas grandes (celular grande) */
+@media (min-width: 376px) and (max-width: 1000px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .boton {
+        margin: 1.5rem;
+    }
+
+    .encabezado-conocimientos h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .encabezado-sobremi h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .contenedor-conocimientos {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .contenedor-sobremi {
+        padding: 4rem 0.5rem 1rem 0.5rem;
+    }
+
+    .parrafo-conocimientos p {
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .parrafo-sobremi p {
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .mis-conocimientos {
+        background-color: rgb(141, 115, 228);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mi-sobremi {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem;
+    }
+
+
+    .grafico-conocimientos {
+        width: 95%;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+    .galeria-desarrollo-web,
+    .galeria-anuncios,
+    .formulario {
+        padding: 3rem 0;
+    }
+
+    footer a,
+    p {
+        font-size: 1rem;
+    }
+
+    footer h4 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffcbee;
+    }
+
+    .div-row {
+        margin: 0;
+    }
+}

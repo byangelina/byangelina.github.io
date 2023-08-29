@@ -315,7 +315,6 @@ button a {
     background-color: rgb(141, 115, 228);
     color: white;
     display: flex;
-    /* Agregamos display: flex */
     justify-content: center;
     align-items: center;
     padding: 3rem;
@@ -325,12 +324,10 @@ button a {
 .contenedor-conocimientos {
     flex: 1;
     padding:5rem;
-    /* Ocupa la mitad del espacio disponible */
 }
 
 .grafico-conocimientos {
     flex: 0.5;
-    /* Ocupa la otra mitad del espacio disponible */
     padding: 2rem 5rem;
     font-weight: 600;
     font-size: 1.2rem;
@@ -479,20 +476,6 @@ button a {
     padding: 10px;
 }
 
-.carousel-caption h5,
-.carousel-caption p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos para el sombreado en los textos de la galería */
-.carousel-caption h5,
-.carousel-caption p {
-    margin: 0;
-    padding: 0;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
-}
-
 
 /* Estilos para el formulario de contacto */
 .formulario {
@@ -505,7 +488,6 @@ button a {
 }
 
 .form-derecha {
-    /* Ancho máximo deseado */
     padding: 3.5rem;
     display: flex;
     flex-direction: column;
@@ -528,7 +510,7 @@ button a {
     width: 100%;
 }
 
-.form-derecha p {
+.form-derecha form p {
     margin: 1.2rem 0;
     color: black;
     font-size: 1.3rem;
