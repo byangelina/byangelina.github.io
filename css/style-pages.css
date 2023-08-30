@@ -847,11 +847,6 @@ body {
         height: 100%;
         width: 100%;
     }
-
-    
-    .gustos {
-        padding: 5rem;
-    }
     
     .gustos p {
         padding: 3rem;
@@ -870,7 +865,6 @@ body {
     }
 
     .mis-habilidades img {
-        width: 30%;
         margin: 0;
     }
 
