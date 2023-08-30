@@ -789,7 +789,7 @@ footer ul li a:hover {
 
 
 /* Estilos para dispositivos de 376px a 1000px */
-@media (min-width: 801px) and (max-width: 1080px) {
+@media (min-width: 801px) and (max-width: 2000px) {
 body {
     font-size: 1rem;
 }
