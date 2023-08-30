@@ -364,7 +364,7 @@ button a {
 
 .gustos p{
     text-align: center;
-    padding: 1rem 5rem 4rem 5rem;
+    padding: 1rem 9rem 4rem 9rem;
     margin: 0;
     font-size: 1.5rem;
     line-height: 1.7;
@@ -707,7 +707,7 @@ button .pedir{
 
 
 
-/* Estilos para pantallas de 320px a 375px */
+/* Estilos para pantallas de 320px a 800px */
 @media (min-width: 320px) and (max-width: 800px) {
     body {
         font-size: 15px;
@@ -813,7 +813,7 @@ button .pedir{
 
 
 
-/* Estilos para dispositivos de 376px a 1000px */
+/* Estilos para dispositivos de 8001px a 2000px */
 @media (min-width: 801px) and (max-width: 2000px) {
 body {
     font-size: 1rem;
@@ -848,12 +848,9 @@ body {
         width: 100%;
     }
 
-    .gustos .image-grid {
-            display: flex;
-    }
     
     .gustos {
-        padding: 2rem;
+        padding: 5rem;
     }
     
     .gustos p {
