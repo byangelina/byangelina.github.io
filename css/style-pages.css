@@ -446,11 +446,13 @@ button a {
 /*---------------------------------------------------------*/
 /*INDEX curriculum vitae (clic boton - home)*/
 .curriculum {
-    padding: 0;
+    padding: 1.5rem;
 }
 
 .curriculum section{
     padding: 4rem 6rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.067);
 }
 
 .curriculum section h2{
@@ -789,6 +791,22 @@ button .pedir{
         width: 90%;
     }
 
+    .curriculum section img{ 
+        width: 80%;
+    }
+
+    .personal-info{
+        display: block;
+        align-items: center;
+    }
+
+    .right-column{
+        text-align: center;
+    }
+
+    .right-column img{
+        margin: 2rem;
+    }
 
 }
 
