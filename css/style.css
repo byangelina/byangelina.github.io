@@ -273,6 +273,20 @@ button a {
     font-weight: 600;
 }
 
+.carousel-control-next-icon{
+    background-image: url(../img/siguiente.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/atras.png);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position:absolute;
+    width:6% ;
+}
+
 
 /*SECCIÓN SOBRE MÍ*/
 .sobremi {
