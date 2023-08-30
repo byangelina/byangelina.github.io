@@ -263,6 +263,7 @@ button {
     background-color: rgb(144, 117, 232);
     border-radius: 2rem;
     padding: 1rem;
+    margin: 1rem;
     border: 0;
 }
 
