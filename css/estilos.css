@@ -393,3 +393,7 @@ footer {
   footer .footer-icon {
     width: 20px;
     height: 20px; }
+  footer .derechos-reservados {
+    font-size: 13px;
+    text-align: center;
+    line-height: 2; }

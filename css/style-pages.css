@@ -613,8 +613,14 @@ footer ul li a:hover {
 /* Estilos para las imágenes de las redes sociales en el footer */
 .footer-icon {
     width: 20px;
-    /* Ajusta el tamaño según tus preferencias */
     height: 20px;
+}
+
+
+.derechos-reservados {
+    font-size: 13px;
+    text-align: center;
+    line-height: 2;
 }
 
 
